@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import Org from './org';
 import './App.css';
 
 const App: React.FC = () => {
@@ -54,12 +55,13 @@ const App: React.FC = () => {
         <div className="DM">{minutes < 10 ? "0" : ""}{minutes}:</div>
         <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
       </div>
-      {/* <div className="Clock mobile">
+      <div className="Clock mobile">
         <div className="DM">{days < 10 ? "0" : ""}{days}</div>
         <div className="HS">{hours < 10 ? "0" : ""}{hours}</div>
         <div className="DM">{minutes < 10 ? "0" : ""}{minutes}</div>
         <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
-      </div>  */}
+      </div> 
+      <a href="https://www.google.com/">NUORODA Į UŽDUOTIS</a>
     </div> 
     </div>
   );
