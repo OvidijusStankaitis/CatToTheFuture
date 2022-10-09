@@ -1,30 +1,26 @@
-@font-face 
-{
+@font-face {
   font-family: Lovelo;
   src: url("Assets/Lovelo\ Line\ Bold.otf") format("opentype");
 }
 
-@font-face 
-{
+@font-face {
   font-family: Time;
   src: url("Assets/DIGITALDREAMFAT.ttf") format("truetype");
   font-weight: bold;
 }
 
-.App
-{
+.App {
   width: 100vw;
-  height: 200vh;
+  height: 300vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgb(140,2,167);
-  background: linear-gradient(0deg, rgba(140,2,167,1) 0%, rgba(95,0,131,1) 34%, rgba(0,0,0,1) 100%);
+  background: rgb(140, 2, 167);
+  background: linear-gradient(0deg, rgba(140, 2, 167, 1) 0%, rgba(95, 0, 131, 1) 34%, rgba(0, 0, 0, 1) 100%);
   overflow: hidden;
 }
 
-.Heading
-{
+.Heading {
   font-family: Lovelo;
   text-transform: uppercase;
   font-size: 8vw;
@@ -35,12 +31,11 @@
   padding: 1.2vw 1.2vw 1.2vw;
   border: 0.4vw solid #fff;
   border-radius: 1.5vw;
-  animation: flicker 0.5s infinite alternate;  
+  animation: flicker 0.5s infinite alternate;
   z-index: 2;
 }
 
-.Left
-{
+.Left {
   display: flex;
   justify-content: center;
   font-family: Lovelo;
@@ -54,8 +49,7 @@
   z-index: 2;
 }
 
-.Clock
-{
+.Clock {
   display: flex;
   justify-content: center;
   font-family: Time;
@@ -64,113 +58,205 @@
   margin-top: 8vh;
   margin-left: 3vw;
   margin-right: 3vw;
-  font-size: 6vw;  
+  font-size: 6vw;
   z-index: 2;
 }
 
-.DM
-{
+.DM {
   text-shadow:
-    0 0 0.35vw #fff, 
-    0 0 0.7vw #fff, 
-    0 0 1.05vw #0dced8, 
-    0 0 1.4vw #0dced8, 
-    0 0 1.75vw #0dced8, 
-    0 0 2.1vw #0dced8, 
-    0 0 2.45vw #0dced8; 
+    0 0 0.35vw #fff,
+    0 0 0.7vw #fff,
+    0 0 1.05vw #0dced8,
+    0 0 1.4vw #0dced8,
+    0 0 1.75vw #0dced8,
+    0 0 2.1vw #0dced8,
+    0 0 2.45vw #0dced8;
 }
 
-.HS
-{
+.HS {
   text-shadow:
-    0 0 0.35vw #fff, 
-    0 0 0.7vw #fff, 
-    0 0 1.05vw #bc13fe, 
-    0 0 1.4vw #bc13fe, 
-    0 0 1.75vw #bc13fe, 
-    0 0 2.1vw #bc13fe, 
-    0 0 2.45vw #bc13fe; 
+    0 0 0.35vw #fff,
+    0 0 0.7vw #fff,
+    0 0 1.05vw #bc13fe,
+    0 0 1.4vw #bc13fe,
+    0 0 1.75vw #bc13fe,
+    0 0 2.1vw #bc13fe,
+    0 0 2.45vw #bc13fe;
 }
 
-a 
-{
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a {
   display: flex;
   justify-content: center;
   font-family: Lovelo;
   text-transform: uppercase;
   color: aliceblue;
   font-size: 3vw;
-  margin-top: 8vh;  
-  color: hotpink;
+  margin-top: 8vh;
+  color: #fff;
+  text-shadow:
+    0 0 0.35vw #fff,
+    0 0 0.7vw #fff,
+    0 0 1.05vw #f73093,
+    0 0 1.4vw #f73093,
+    0 0 1.75vw #f73093,
+    0 0 2.1vw #f73093,
+    0 0 2.45vw #f73093;
+}
+
+.Vadovai {
+  font-family: Lovelo;
+  text-transform: uppercase;
+  font-size: 8vw;
+  color: aliceblue;
+  margin-top: 8vh;
+  text-align: center;
+  z-index: 2;
+  text-shadow:
+    0 0 0.35vw #fff,
+    0 0 0.7vw #fff,
+    0 0 1.05vw #0dced8,
+    0 0 1.4vw #0dced8,
+    0 0 1.75vw #0dced8,
+    0 0 2.1vw #0dced8,
+    0 0 2.45vw #0dced8;
+}
+
+.Grid-container {
+  margin-top: 5vh;
+  display: grid;
+  gap: 3vw;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+  background-color: #F8C8DC;
+  border: 0.4vw solid #F8C8DC;
+  border-radius: 1.5vw;
+  text-align: center;
+  box-shadow:
+    0 0 0.35vw #F8C8DC,
+    0 0 0.7vw #F8C8DC,
+    0 0 1.05vw #0dced8,
+    0 0 1.4vw #0dced8,
+    0 0 1.75vw #0dced8,
+    0 0 2.1vw #0dced8,
+    0 0 2.45vw #0dced8;
+}
+
+.Picture {
+  width: 10vw;
+  border-radius: 50%;
+  padding: 2vw;
+}
+
+.Org
+{
+  margin-bottom: 3vh;
+  font-family: Lovelo;
+  text-transform: uppercase;
+  font-size: 1vw;
+  color: aliceblue;
 }
 
 @keyframes flicker {
-      
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    
-      text-shadow:
-        0 0 0.35vw #fff, 
-        0 0 0.7vw #fff, 
-        0 0 1.05vw #bc13fe, 
-        0 0 1.4vw #bc13fe, 
-        0 0 1.75vw #bc13fe, 
-        0 0 2.1vw #bc13fe, 
-        0 0 2.45vw #bc13fe;  
-        
-      box-shadow:
-        0 0 0.35vw #fff, 
-        inset 0 0 0.35vw #fff, 
-        0 0 0.7vw #fff, 
-        inset 0 0 0.7vw #fff, 
-        0 0 1.05vw #0dced8, 
-        inset 0 0 1.05vw #0dced8, 
-        0 0 1.4vw #0dced8, 
-        inset 0 0 1.4vw #0dced8, 
-        0 0 1.75vw #0dced8, 
-        inset 0 0 1.75vw #0dced8, 
-        0 0 2.1vw #0dced8, 
-        inset 0 0 2.1vw #0dced8, 
-        0 0 2.45vw #0dced8,
-        inset 0 0 2.45vw #0dced8; 
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      inset 0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      inset 0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      inset 0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      inset 0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8,
+      inset 0 0 2.45vw #0dced8;
   }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-      box-shadow: none;
-  }    
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
 }
 
 @keyframes flicker2 {
-    
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    
-      text-shadow:
-        0 0 0.35vw #fff, 
-        0 0 0.7vw #fff, 
-        0 0 1.05vw #0dced8, 
-        0 0 1.4vw #0dced8, 
-        0 0 1.75vw #0dced8, 
-        0 0 2.1vw #0dced8, 
-        0 0 2.45vw #0dced8;   
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
   }
-  
-  20%, 24%, 55% {        
-      text-shadow: none;
-  }    
+
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
 }
 
 .mobile {
   display: none;
 }
 
-@media(max-width: 600px)
-{
+@media(max-width: 600px) {
   .mobile {
     display: flex;
   }
 
-  .Clock
-  {
+  .Clock {
     display: flex;
     justify-content: center;
     font-family: Time;
@@ -179,14 +265,13 @@ a
     margin-top: 8vh;
     margin-left: 3vw;
     margin-right: 3vw;
-    font-size: 5em;  
+    font-size: 5em;
     z-index: 2;
     flex-direction: column;
     gap: 12px;
   }
 
-  .mobile-noshow
-  {
+  .mobile-noshow {
     display: none;
   }
 }

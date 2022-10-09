@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import Org from './org';
 import './App.css';
+import Sus from "./Assets/sus.jpg"
 
 const App: React.FC = () => {
 
@@ -49,22 +49,88 @@ const App: React.FC = () => {
       <div className="Heading">ATGAL Į KATEITĮ</div>
       <div className="Left">IKI RENGINIO PABAIGOS LIKO</div>
       <div className="delayed">
-      <div className="Clock mobile-noshow">
-        <div className="DM">{days < 10 ? "0" : ""}{days}:</div>
-        <div className="HS">{hours < 10 ? "0" : ""}{hours}:</div>
-        <div className="DM">{minutes < 10 ? "0" : ""}{minutes}:</div>
-        <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
-      </div>
-      <div className="Clock mobile">
-        <div className="DM">{days < 10 ? "0" : ""}{days}</div>
-        <div className="HS">{hours < 10 ? "0" : ""}{hours}</div>
-        <div className="DM">{minutes < 10 ? "0" : ""}{minutes}</div>
-        <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
+        <div className="Clock mobile-noshow">
+          <div className="DM">{days < 10 ? "0" : ""}{days}:</div>
+          <div className="HS">{hours < 10 ? "0" : ""}{hours}:</div>
+          <div className="DM">{minutes < 10 ? "0" : ""}{minutes}:</div>
+          <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
+        </div>
+        <div className="Clock mobile">
+          <div className="DM">{days < 10 ? "0" : ""}{days}</div>
+          <div className="HS">{hours < 10 ? "0" : ""}{hours}</div>
+          <div className="DM">{minutes < 10 ? "0" : ""}{minutes}</div>
+          <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
+        </div> 
+        <a href="https://www.google.com/">NUORODA Į UŽDUOTIS</a>
+        <div className="Vadovai">VADOVAI</div>
       </div> 
-      <a href="https://www.google.com/">NUORODA Į UŽDUOTIS</a>
-    </div> 
+      <div className="Grid-container">
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+        <div className="grid-item">
+          <img src={Sus} alt="" className="Picture"/>
+          <div className="Org">
+            <div>Pozicija</div>
+            <div>Vardas Pavardė</div>
+          </div>
+        </div>
+      </div>
     </div>
-  );
+  ); 
 }
 
 export default App;
