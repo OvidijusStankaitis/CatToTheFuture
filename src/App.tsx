@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Sus from "./Assets/sus.jpg"
+import { ExpandMore } from '@mui/icons-material';
+import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
+
 
 const App: React.FC = () => {
 
@@ -61,74 +64,202 @@ const App: React.FC = () => {
           <div className="DM">{minutes < 10 ? "0" : ""}{minutes}</div>
           <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
         </div> 
-        <a href="https://www.google.com/">NUORODA Į UŽDUOTIS</a>
-        <div className="Vadovai">VADOVAI</div>
       </div> 
-      <div className="Grid-container">
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
+      <a href="https://www.google.com/">NUORODA Į UŽDUOTIS</a>
+      <Accordion sx = {{
+      backgroundColor: "rgba(0, 0, 0, 0)", 
+      boxShadow: "0",
+      '& .MuiSvgIcon-root': {
+        color: '#fff'
+      },
+      '&:before': {
+        display: 'none',
+      }}}>
+        <AccordionSummary  expandIcon={<ExpandMore />}>
+          <div className="Vadovai">VADOVAI</div>
+        </AccordionSummary>
+          <AccordionDetails>
+          <div className="Grid-container">
+            <div className="grid-item">
+              <img src={Sus} alt="" className="Picture"/>
+              <div className="Org">
+                <div>IT</div>
+                <div>OVIDIJUS STANKAITIS</div>
+              </div>
+            </div>
+            <div className="grid-item">
+              <img src={Sus} alt="" className="Picture"/>
+              <div className="Org">
+                <div>ORGANIZAVIMAS</div>
+                <div>GYTIS BUKNIUS</div>
+              </div>
+            </div>
+            <div className="grid-item">
+              <img src={Sus} alt="" className="Picture"/>
+              <div className="Org">
+                <div>KOMUNIKACIJA</div>
+                <div>MONIKA MIRBAKAITĖ</div>
+              </div>
+            </div>
+            <div className="grid-item">
+              <img src={Sus} alt="" className="Picture"/>
+              <div className="Org">
+                <div>MARKETINGAS</div>
+                <div>DANIELIUS VENSKŪNAS</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-        <div className="grid-item">
-          <img src={Sus} alt="" className="Picture"/>
-          <div className="Org">
-            <div>Pozicija</div>
-            <div>Vardas Pavardė</div>
-          </div>
-        </div>
-      </div>
+          </AccordionDetails>
+      </Accordion>
+      <Accordion sx = {{
+      backgroundColor: "rgba(0, 0, 0, 0)", 
+      boxShadow: "0",
+      '& .MuiSvgIcon-root': {
+        color: '#fff'
+      },
+      '&:before': {
+        display: 'none',
+      }}}>
+        <AccordionSummary  expandIcon={<ExpandMore />}>
+          <div className="Vadovai">ORGANIZATORIAI</div>
+        </AccordionSummary>
+          <AccordionDetails>
+            <div className="Grid-container">
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>VYTENIS NARMONTAS</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>GABRIELĖ DRUNGILAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>EGLĖ ORINTAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>VAIVA JANAVIČIŪTĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>BARBORA ŠINKEVIČIŪTĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>ROKAS BALTRUŠAITIS</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>UGNĖ BAUBLYTĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>UGNĖ MEŠKUOTYTĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>SIMONAS URBUTIS</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>AISTĖ IVANAUSKAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>AKVILĖ ROPYTĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>MĖTA ŽEMAITYTĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>EIDVILĖ SATEIKAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>LUKAS JAKONIS</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>GABRIELĖ KASPERAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>GUSTAS LUGAUSKAS</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>VYGINTAS BARTUSEVIČIUS</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>GABIJA LIORENTAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>GUSTAS ŠTAŠEVSKIS</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>IEVA MARIJA NOREIKAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>GABIJA BUROKAITĖ</div>
+                </div>
+              </div>
+              <div className="grid-item">
+                <img src={Sus} alt="" className="Picture"/>
+                <div className="Org">
+                  <div>GABIJA APŪKAITĖ</div>
+                </div>
+              </div>
+            </div>
+          </AccordionDetails>
+      </Accordion>
     </div>
   ); 
 }
