@@ -317,6 +317,14 @@ const App: React.FC = () => {
           </div>
         </AccordionDetails>
       </Accordion>
+      <div className="Reklama">
+        <div className="GaidelisT">
+
+        </div>
+        <div className="GaidelisP">
+
+        </div>
+      </div>
     </div>
   );
 }
