@@ -9,15 +9,20 @@
   font-weight: bold;
 }
 
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 .App {
   width: 100vw;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
-  background: rgb(77,0,106);
-  background: radial-gradient(circle, rgba(77,0,106,1) 0%, rgba(55,0,77,1) 41%, rgba(0,0,0,1) 100%);
-  overflow: hidden;
+  background: rgb(77, 0, 106);
+  background: radial-gradient(circle, rgba(77, 0, 106, 1) 0%, rgba(55, 0, 77, 1) 41%, rgba(0, 0, 0, 1) 100%);
+  overflow-y: scroll;
 }
 
 .Heading {
@@ -94,13 +99,13 @@ a:visited {
 
 a:hover {
   text-shadow:
-  0 0 0.35vw #fff,
-  0 0 0.7vw #fff,
-  0 0 1.05vw #0dced8,
-  0 0 1.4vw #0dced8,
-  0 0 1.75vw #0dced8,
-  0 0 2.1vw #0dced8,
-  0 0 2.45vw #0dced8;
+    0 0 0.35vw #fff,
+    0 0 0.7vw #fff,
+    0 0 1.05vw #0dced8,
+    0 0 1.4vw #0dced8,
+    0 0 1.75vw #0dced8,
+    0 0 2.1vw #0dced8,
+    0 0 2.45vw #0dced8;
 }
 
 a:active {
@@ -188,8 +193,7 @@ a {
   padding: 2vw;
 }
 
-.Org
-{
+.Org {
   margin-bottom: 3vh;
   font-family: Lovelo;
   text-transform: uppercase;
@@ -197,93 +201,78 @@ a {
   color: aliceblue;
 }
 
-.Text-box
-{
+.Text-box {
   width: 76.1869vw;
   margin-bottom: 2vh;
 }
 
-.Text
-{
+.Text {
   color: aliceblue;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 1.51vw;
 }
 
-.GaidelisT
-{
-  color: rgba(0,0,0,0);
+.GaidelisT {
+  display: flex;
+  justify-content: center;
+  font-family: Lovelo;
+  text-transform: uppercase;
+  font-size: 5vw;
+  color: aliceblue;
+  text-shadow:
+    0 0 0.35vw #fff,
+    0 0 0.7vw #fff,
+    0 0 1.05vw #bc13fe,
+    0 0 1.4vw #bc13fe,
+    0 0 1.75vw #bc13fe,
+    0 0 2.1vw #bc13fe,
+    0 0 2.45vw #bc13fe;
+  margin-bottom: 2vh;
 }
 
-.GaidelisP
-{
-  color: rgba(0,0,0,0);
+.GaidelisP {
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vh;
+  border-radius: 20%;
 }
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
 
 @media (min-width: 1281px) {
-  
-  /* CSS */
-  
-}
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+
+}
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  /* CSS */
-  
-}
 
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+
+}
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
-}
 
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
+
+}
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  
-}
 
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
+
+}
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
-  /* CSS */
-  
-}
 
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
+
+}
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
-  /* CSS */
-  
+
+
 }
+
+@media (max-width: 320px) {
+
+
+}
+
 
 @keyframes flicker {
 

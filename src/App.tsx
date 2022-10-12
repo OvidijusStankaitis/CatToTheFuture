@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Sus from "./Assets/sus.jpg"
+import Gaidelis from "./Assets/gaidelis.png";
 import { ExpandMore } from '@mui/icons-material';
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
-import { Typography } from '@mui/material/styles/createTypography';
 
 
 const App: React.FC = () => {
@@ -13,38 +13,38 @@ const App: React.FC = () => {
   const [minutes, setMinutes] = useState(0)
   const [seconds, setSeconds] = useState(0)
 
-  useEffect(() => {
-    const target = new Date("10/13/2022 22:59:59")
-    var now = new Date()
-    var difference = target.getTime() - now.getTime()
-    SetClock(difference)
+  let interval:NodeJS.Timer
 
-    function SetClock(difference: number) {
-      const d = Math.floor(difference / (1000 * 60 * 60 * 24))
-      setDays(d)
-
-      const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-      setHours(h)
-
-      const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
-      setMinutes(m)
-
-      const s = Math.floor((difference % (1000 * 60)) / 1000)
-      setSeconds(s)
+  function SetClock(difference: number) {
+    if (difference <= 0) {
+      setDays(0)
+      setHours(0)
+      setMinutes(0)
+      setSeconds(0)
+      return
     }
+    const d = Math.floor(difference / (1000 * 60 * 60 * 24))
+    setDays(d)
 
-    const interval = setInterval(() => {
-      now = new Date()
-      difference = target.getTime() - now.getTime()
-      if (difference <= 1) {
-        clearInterval(interval);
-        return;
-      }
-      SetClock(difference)
+    const h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+    setHours(h)
 
+    const m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+    setMinutes(m)
 
+    const s = Math.floor((difference % (1000 * 60)) / 1000)
+    setSeconds(s)
+  }
+  const target = new Date("10/13/2022 20:00:00")
+
+  useEffect(() => {
+    let difference = target.getTime() - Date.now();
+    SetClock(difference);
+    interval = setInterval(() => {
+      difference = target.getTime() - Date.now();
+      SetClock(difference);
     }, 1000)
-
+    return () => clearInterval(interval);
 
   }, [])
   return (
@@ -296,35 +296,29 @@ const App: React.FC = () => {
         <AccordionDetails>
           <div className="Text-box">
             <div className="Text">
-              „Dar viena nuobodi diena…“, galvojo Micius vartydamasis lovoje. 
-              Micius jau išnaršė kiekvieną planetos Smėlynas kampelį ir susipažino su kiekvienu gyventoju.  
-              Jis troško nuotykių, tačiau ši maža ir nieko pasižyminti planeta negalėjo įgyvendinti katinuko didelių svajonių. 
-              Todėl Micius nusprendė pastatyti laiko mašiną ir iškeliauti į kitą laiką MIF planetoje! 
-              Jis troško išbandymų ir pavojų, kurių niekada nerastų Smėlyne. O ateityje yra daug Miciui nematytų technologijų, 
-              keistų madų ir paslaptingų misijų, kurias suprasti Miciui reikia pagalbos. Dėl to jis sumąstė suburti daugelį unikalių komandų, 
+              „Dar viena nuobodi diena…“, galvojo Micius vartydamasis lovoje.
+              Micius jau išnaršė kiekvieną planetos Smėlynas kampelį ir susipažino su kiekvienu gyventoju.
+              Jis troško nuotykių, tačiau ši maža ir nieko pasižyminti planeta negalėjo įgyvendinti katinuko didelių svajonių.
+              Todėl Micius nusprendė pastatyti laiko mašiną ir iškeliauti į kitą laiką MIF planetoje!
+              Jis troško išbandymų ir pavojų, kurių niekada nerastų Smėlyne. O ateityje yra daug Miciui nematytų technologijų,
+              keistų madų ir paslaptingų misijų, kurias suprasti Miciui reikia pagalbos. Dėl to jis sumąstė suburti daugelį unikalių komandų,
               kurios galės pateikti kuo įvairesnius ir kūrybiškesnius  sprendimus į ateities iššūkius!
             </div>
             <br></br>
             <div className="Text">
-              “Another boring day…” thought Micius to himself while rolling around in bed. 
-              He has already been to every corner and met every inhabitant of his planet called Sandbox. 
-              Micius dreamed of adventure but this small and unnoteworthy planet couldn’t satisfy the kitten’s ambitions. 
-              So Micius decided to build a time machine and travel to a different time in the planet of MIF! He thirsted for challenges and dangers which 
-              he couldn’t find in Sandbox. And the future holds a lot of unheard-of technologies, weird fashion and mysterious missions, 
-              for which Micius needs help. Because of this he decided to gather tons of unique teams, which can provide him with the most 
+              “Another boring day…” thought Micius to himself while rolling around in bed.
+              He has already been to every corner and met every inhabitant of his planet called Sandbox.
+              Micius dreamed of adventure but this small and unnoteworthy planet couldn’t satisfy the kitten’s ambitions.
+              So Micius decided to build a time machine and travel to a different time in the planet of MIF! He thirsted for challenges and dangers which
+              he couldn’t find in Sandbox. And the future holds a lot of unheard-of technologies, weird fashion and mysterious missions,
+              for which Micius needs help. Because of this he decided to gather tons of unique teams, which can provide him with the most
               varied and creative solutions to future’s tasks!
             </div>
           </div>
         </AccordionDetails>
       </Accordion>
-      <div className="Reklama">
-        <div className="GaidelisT">
-
-        </div>
-        <div className="GaidelisP">
-
-        </div>
-      </div>
+      <div className="GaidelisT">RĖMĖJAI</div>
+      <img src={Gaidelis} alt="" className="GaidelisP"/>
     </div>
   );
 }
