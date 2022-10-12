@@ -35,7 +35,7 @@ const App: React.FC = () => {
     const s = Math.floor((difference % (1000 * 60)) / 1000)
     setSeconds(s)
   }
-  const target = new Date("10/13/2022 20:00:00")
+  const target = new Date("10/13/2022 23:59:59")
 
   useEffect(() => {
     let difference = target.getTime() - Date.now();
