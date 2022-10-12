@@ -1,6 +1,31 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
+// import Sus from "./Assets/sus.jpg"
 import Gaidelis from "./Assets/gaidelis.png";
 import { ExpandMore } from '@mui/icons-material';
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
@@ -65,7 +90,7 @@ const App: React.FC = () => {
           <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
         </div>
       </div>
-      <a href="https://www.google.com/">NUORODA Į UŽDUOTIS</a>
+      <a href="https://docs.google.com/document/d/1mWPG952dNbKEvxkeSyQOlCK9GyKVpZTqkRsuP-Xr7IM/edit">NUORODA Į UŽDUOTIS</a>
       <Accordion sx={{
         width: "90vw",
         zIndex: "2",
