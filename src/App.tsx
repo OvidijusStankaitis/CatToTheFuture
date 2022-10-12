@@ -67,6 +67,7 @@ const App: React.FC = () => {
       </div>
       <a href="https://www.google.com/">NUORODA Į UŽDUOTIS</a>
       <Accordion sx={{
+        width: "90vw",
         zIndex: "2",
         marginBottom: "8vh",
         backgroundColor: "rgba(0, 0, 0, 0)",
@@ -119,6 +120,7 @@ const App: React.FC = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion sx={{
+        width: "90vw",
         zIndex: "2",
         marginBottom: "8vh",
         backgroundColor: "rgba(0, 0, 0, 0)",
@@ -275,8 +277,9 @@ const App: React.FC = () => {
         </AccordionDetails>
       </Accordion>
       <Accordion sx={{
+        width: "90vw",
         zIndex: "2",
-        marginBottom: "8vh",
+        marginBottom: "10vh",
         backgroundColor: "rgba(0, 0, 0, 0)",
         boxShadow: "0",
         '& .MuiSvgIcon-root': {

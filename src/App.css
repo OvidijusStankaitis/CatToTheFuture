@@ -25,48 +25,6 @@ html {
   overflow-y: scroll;
 }
 
-.Heading {
-  font-family: Lovelo;
-  text-transform: uppercase;
-  font-size: 8vw;
-  color: aliceblue;
-  margin-top: 5vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  padding: 1.2vw 1.2vw 1.2vw;
-  border: 0.4vw solid #fff;
-  border-radius: 1.5vw;
-  animation: flicker 0.5s infinite alternate;
-  z-index: 2;
-}
-
-.Left {
-  display: flex;
-  justify-content: center;
-  font-family: Lovelo;
-  text-transform: uppercase;
-  color: aliceblue;
-  margin-top: 8vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  font-size: 5vw;
-  animation: flicker2 0.5s infinite alternate;
-  z-index: 2;
-}
-
-.Clock {
-  display: flex;
-  justify-content: center;
-  font-family: Time;
-  text-transform: uppercase;
-  color: aliceblue;
-  margin-top: 8vh;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  font-size: 6vw;
-  z-index: 2;
-}
-
 .DM {
   text-shadow:
     0 0 0.35vw #fff,
@@ -112,167 +70,1203 @@ a:active {
   text-decoration: none;
 }
 
-a {
-  display: flex;
-  justify-content: center;
-  font-family: Lovelo;
-  text-transform: uppercase;
-  color: aliceblue;
-  font-size: 5vw;
-  margin-top: 8vh;
-  color: #fff;
-  text-shadow:
-    0 0 0.35vw #fff,
-    0 0 0.7vw #fff,
-    0 0 1.05vw #f73093,
-    0 0 1.4vw #f73093,
-    0 0 1.75vw #f73093,
-    0 0 2.1vw #f73093,
-    0 0 2.45vw #f73093;
-  margin-bottom: 8vh;
-}
-
-.Vadovai {
-  font-family: Lovelo;
-  text-transform: uppercase;
-  font-size: 8vw;
-  color: aliceblue;
-  text-shadow:
-    0 0 0.35vw #fff,
-    0 0 0.7vw #fff,
-    0 0 1.05vw #0dced8,
-    0 0 1.4vw #0dced8,
-    0 0 1.75vw #0dced8,
-    0 0 2.1vw #0dced8,
-    0 0 2.45vw #0dced8;
-}
-
-.Organizatoriai {
-  font-family: Lovelo;
-  text-transform: uppercase;
-  font-size: 8vw;
-  color: aliceblue;
-  text-shadow:
-    0 0 0.35vw #fff,
-    0 0 0.7vw #fff,
-    0 0 1.05vw #bc13fe,
-    0 0 1.4vw #bc13fe,
-    0 0 1.75vw #bc13fe,
-    0 0 2.1vw #bc13fe,
-    0 0 2.45vw #bc13fe;
-}
-
-.Grid-container {
-  margin-top: 5vh;
-  display: grid;
-  gap: 3vw;
-  grid-template-columns: auto auto auto auto;
-  margin-bottom: 32px;
-}
-
-.grid-item {
-  background-color: #000;
-  border: 0.4vw solid #fff;
-  border-radius: 1.5vw;
-  text-align: center;
-  box-shadow:
-    0 0 0.35vw #fff,
-    inset 0 0 0.35vw #fff,
-    0 0 0.7vw #fff,
-    inset 0 0 0.7vw #fff,
-    0 0 1.05vw #11f3ff,
-    0 0 1.4vw #11f3ff,
-    0 0 1.75vw #11f3ff,
-    0 0 2.1vw #11f3ff,
-    0 0 2.45vw #11f3ff;
-}
-
-.Picture {
-  width: 12vw;
-  border-radius: 50%;
-  padding: 2vw;
-}
-
-.Org {
-  margin-bottom: 3vh;
-  font-family: Lovelo;
-  text-transform: uppercase;
-  font-size: 1.25vw;
-  color: aliceblue;
-}
-
-.Text-box {
-  width: 76.1869vw;
-  margin-bottom: 2vh;
-}
-
-.Text {
-  color: aliceblue;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1.51vw;
-}
-
-.GaidelisT {
-  display: flex;
-  justify-content: center;
-  font-family: Lovelo;
-  text-transform: uppercase;
-  font-size: 5vw;
-  color: aliceblue;
-  text-shadow:
-    0 0 0.35vw #fff,
-    0 0 0.7vw #fff,
-    0 0 1.05vw #bc13fe,
-    0 0 1.4vw #bc13fe,
-    0 0 1.75vw #bc13fe,
-    0 0 2.1vw #bc13fe,
-    0 0 2.45vw #bc13fe;
-  margin-bottom: 2vh;
-}
-
-.GaidelisP {
-  width: 15vw;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 4vh;
-  border-radius: 20%;
-}
-
 @media (min-width: 1281px) {
 
+  .Heading {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 1.2vw 1.2vw 1.2vw;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    animation: flicker 0.5s infinite alternate;
+    z-index: 2;
+  }
 
+  .Left {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 5vw;
+    animation: flicker2 0.5s infinite alternate;
+    z-index: 2;
+  }
+
+  .Clock {
+    display: flex;
+    justify-content: center;
+    font-family: Time;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    z-index: 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 5vw;
+    margin-top: 8vh;
+    color: #fff;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #f73093,
+      0 0 1.4vw #f73093,
+      0 0 1.75vw #f73093,
+      0 0 2.1vw #f73093,
+      0 0 2.45vw #f73093;
+    margin-bottom: 8vh;
+  }
+
+  .Vadovai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
+  }
+
+  .Organizatoriai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+  }
+
+  .Grid-container {
+    margin-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 32px;
+  }
+
+  .grid-item {
+    background-color: #000;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    text-align: center;
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #11f3ff,
+      0 0 1.4vw #11f3ff,
+      0 0 1.75vw #11f3ff,
+      0 0 2.1vw #11f3ff,
+      0 0 2.45vw #11f3ff;
+  }
+
+  .Picture {
+    width: 12vw;
+    border-radius: 50%;
+    padding: 2vw;
+  }
+
+  .Org {
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 1.25vw;
+    color: aliceblue;
+  }
+
+  .Text-box {
+    margin-bottom: 2vh;
+  }
+
+  .Text {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.51vw;
+    text-align: justify;
+
+  }
+
+  .GaidelisT {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+    margin-bottom: 2vh;
+  }
+
+  .GaidelisP {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+  }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
+  .Heading {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 10vw;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 1.2vw 1.2vw 1.2vw;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    animation: flicker 0.5s infinite alternate;
+    z-index: 2;
+  }
 
+  .Left {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    animation: flicker2 0.5s infinite alternate;
+    z-index: 2;
+  }
+
+  .Clock {
+    display: flex;
+    justify-content: center;
+    font-family: Time;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 7vw;
+    z-index: 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 6vw;
+    margin-top: 8vh;
+    color: #fff;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #f73093,
+      0 0 1.4vw #f73093,
+      0 0 1.75vw #f73093,
+      0 0 2.1vw #f73093,
+      0 0 2.45vw #f73093;
+    margin-bottom: 8vh;
+  }
+
+  .Vadovai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
+  }
+
+  .Organizatoriai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+  }
+
+  .Grid-container {
+    margin-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 32px;
+  }
+
+  .grid-item {
+    background-color: #000;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    text-align: center;
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #11f3ff,
+      0 0 1.4vw #11f3ff,
+      0 0 1.75vw #11f3ff,
+      0 0 2.1vw #11f3ff,
+      0 0 2.45vw #11f3ff;
+  }
+
+  .Picture {
+    width: 12vw;
+    border-radius: 50%;
+    padding: 2vw;
+  }
+
+  .Org {
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 1.25vw;
+    color: aliceblue;
+  }
+
+  .Text-box {
+    margin-bottom: 2vh;
+  }
+
+  .Text {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.51vw;
+    text-align: justify;
+  }
+
+  .GaidelisT {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+    margin-bottom: 2vh;
+  }
+
+  .GaidelisP {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
+  .Heading {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 10vw;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 1.2vw 1.2vw 1.2vw;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    animation: flicker 0.5s infinite alternate;
+    z-index: 2;
+  }
 
+  .Left {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    animation: flicker2 0.5s infinite alternate;
+    z-index: 2;
+  }
+
+  .Clock {
+    display: flex;
+    justify-content: center;
+    font-family: Time;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 7vw;
+    z-index: 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 6vw;
+    margin-top: 8vh;
+    color: #fff;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #f73093,
+      0 0 1.4vw #f73093,
+      0 0 1.75vw #f73093,
+      0 0 2.1vw #f73093,
+      0 0 2.45vw #f73093;
+    margin-bottom: 8vh;
+  }
+
+  .Vadovai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
+  }
+
+  .Organizatoriai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+  }
+
+  .Grid-container {
+    margin-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto;
+    margin-bottom: 32px;
+  }
+
+  .grid-item {
+    background-color: #000;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    text-align: center;
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #11f3ff,
+      0 0 1.4vw #11f3ff,
+      0 0 1.75vw #11f3ff,
+      0 0 2.1vw #11f3ff,
+      0 0 2.45vw #11f3ff;
+  }
+
+  .Picture {
+    width: 12vw;
+    border-radius: 50%;
+    padding: 2vw;
+  }
+
+  .Org {
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace, bold;
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: aliceblue;
+  }
+
+  .Text-box {
+    margin-bottom: 2vh;
+  }
+
+  .Text {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .GaidelisT {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+    margin-bottom: 2vh;
+  }
+
+  .GaidelisP {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
+  .Heading {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 10vw;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 1.2vw 1.2vw 1.2vw;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    animation: flicker 0.5s infinite alternate;
+    z-index: 2;
+  }
 
+  .Left {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    animation: flicker2 0.5s infinite alternate;
+    z-index: 2;
+  }
+
+  .Clock {
+    display: flex;
+    justify-content: center;
+    font-family: Time;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 7vw;
+    z-index: 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 6vw;
+    margin-top: 8vh;
+    color: #fff;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #f73093,
+      0 0 1.4vw #f73093,
+      0 0 1.75vw #f73093,
+      0 0 2.1vw #f73093,
+      0 0 2.45vw #f73093;
+    margin-bottom: 8vh;
+  }
+
+  .Vadovai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
+  }
+
+  .Organizatoriai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+  }
+
+  .Grid-container {
+    margin-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto;
+    margin-bottom: 32px;
+  }
+
+  .grid-item {
+    background-color: #000;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    text-align: center;
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #11f3ff,
+      0 0 1.4vw #11f3ff,
+      0 0 1.75vw #11f3ff,
+      0 0 2.1vw #11f3ff,
+      0 0 2.45vw #11f3ff;
+  }
+
+  .Picture {
+    width: 18vw;
+    border-radius: 50%;
+    padding: 2vw;
+  }
+
+  .Org {
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: aliceblue;
+  }
+
+  .Text-box {
+    margin-bottom: 2vh;
+  }
+
+  .Text {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .GaidelisT {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 5vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+    margin-bottom: 2vh;
+  }
+
+  .GaidelisP {
+    width: 15vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+  }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
 
+  .Heading {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 10vw;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 1.2vw 1.2vw 1.2vw;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    animation: flicker 0.5s infinite alternate;
+    z-index: 2;
+  }
 
+  .Left {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    animation: flicker2 0.5s infinite alternate;
+    z-index: 2;
+  }
+
+  .Clock {
+    display: flex;
+    justify-content: center;
+    font-family: Time;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 8vw;
+    z-index: 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 7vw;
+    margin-top: 8vh;
+    color: #fff;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #f73093,
+      0 0 1.4vw #f73093,
+      0 0 1.75vw #f73093,
+      0 0 2.1vw #f73093,
+      0 0 2.45vw #f73093;
+    margin-bottom: 8vh;
+  }
+
+  .Vadovai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 9vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
+  }
+
+  .Organizatoriai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 9vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+  }
+
+  .Grid-container {
+    margin-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto;
+    margin-bottom: 32px;
+  }
+
+  .grid-item {
+    background-color: #000;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    text-align: center;
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #11f3ff,
+      0 0 1.4vw #11f3ff,
+      0 0 1.75vw #11f3ff,
+      0 0 2.1vw #11f3ff,
+      0 0 2.45vw #11f3ff;
+  }
+
+  .Picture {
+    width: 12vw;
+    border-radius: 50%;
+    padding: 2vw;
+  }
+
+  .Org {
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: aliceblue;
+  }
+
+  .Text-box {
+    margin-bottom: 2vh;
+  }
+
+  .Text {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2vw;
+    text-align: justify;
+  }
+
+  .GaidelisT {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 7vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+    margin-bottom: 2vh;
+  }
+
+  .GaidelisP {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+  }
 }
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 321px) and (max-width: 480px) {
 
+  .Heading {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 10vw;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 1.2vw 1.2vw 1.2vw;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    animation: flicker 0.5s infinite alternate;
+    z-index: 2;
+  }
 
+  .Left {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    animation: flicker2 0.5s infinite alternate;
+    z-index: 2;
+  }
+
+  .Clock {
+    display: flex;
+    justify-content: center;
+    font-family: Time;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    z-index: 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 7vw;
+    margin-top: 8vh;
+    color: #fff;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #f73093,
+      0 0 1.4vw #f73093,
+      0 0 1.75vw #f73093,
+      0 0 2.1vw #f73093,
+      0 0 2.45vw #f73093;
+    margin-bottom: 8vh;
+  }
+
+  .Vadovai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8.5vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
+  }
+
+  .Organizatoriai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8.5vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+  }
+
+  .Grid-container {
+    margin-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto;
+    margin-bottom: 32px;
+  }
+
+  .grid-item {
+    background-color: #000;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    text-align: center;
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #11f3ff,
+      0 0 1.4vw #11f3ff,
+      0 0 1.75vw #11f3ff,
+      0 0 2.1vw #11f3ff,
+      0 0 2.45vw #11f3ff;
+  }
+
+  .Picture {
+    width: 12vw;
+    border-radius: 50%;
+    padding: 2vw;
+  }
+
+  .Org {
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 3vw;
+    color: aliceblue;
+  }
+
+  .Text-box {
+    margin-bottom: 2vh;
+  }
+
+  .Text {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vw;
+    text-align: justify;
+  }
+
+  .GaidelisT {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 7vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+    margin-bottom: 2vh;
+  }
+
+  .GaidelisP {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+  }
 }
 
 @media (max-width: 320px) {
 
+  .Heading {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 10vw;
+    color: aliceblue;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 1.2vw 1.2vw 1.2vw;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    animation: flicker 0.5s infinite alternate;
+    z-index: 2;
+  }
 
+  .Left {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    animation: flicker2 0.5s infinite alternate;
+    z-index: 2;
+  }
+
+  .Clock {
+    display: flex;
+    justify-content: center;
+    font-family: Time;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-top: 8vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 6vw;
+    z-index: 2;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: 7vw;
+    margin-top: 8vh;
+    color: #fff;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #f73093,
+      0 0 1.4vw #f73093,
+      0 0 1.75vw #f73093,
+      0 0 2.1vw #f73093,
+      0 0 2.45vw #f73093;
+    margin-bottom: 8vh;
+  }
+
+  .Vadovai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #0dced8,
+      0 0 1.4vw #0dced8,
+      0 0 1.75vw #0dced8,
+      0 0 2.1vw #0dced8,
+      0 0 2.45vw #0dced8;
+  }
+
+  .Organizatoriai {
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 8vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+  }
+
+  .Grid-container {
+    margin-top: 5vh;
+    display: grid;
+    gap: 3vw;
+    grid-template-columns: auto auto;
+    margin-bottom: 32px;
+  }
+
+  .grid-item {
+    background-color: #000;
+    border: 0.4vw solid #fff;
+    border-radius: 1.5vw;
+    text-align: center;
+    box-shadow:
+      0 0 0.35vw #fff,
+      inset 0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      inset 0 0 0.7vw #fff,
+      0 0 1.05vw #11f3ff,
+      0 0 1.4vw #11f3ff,
+      0 0 1.75vw #11f3ff,
+      0 0 2.1vw #11f3ff,
+      0 0 2.45vw #11f3ff;
+  }
+
+  .Picture {
+    width: 12vw;
+    border-radius: 50%;
+    padding: 2vw;
+  }
+
+  .Org {
+    margin-bottom: 3vh;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size: 3vw;
+    color: aliceblue;
+  }
+
+  .Text-box {
+    margin-bottom: 2vh;
+  }
+
+  .Text {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.51vw;
+    text-align: justify;
+  }
+
+  .GaidelisT {
+    display: flex;
+    justify-content: center;
+    font-family: Lovelo;
+    text-transform: uppercase;
+    font-size: 7vw;
+    color: aliceblue;
+    text-shadow:
+      0 0 0.35vw #fff,
+      0 0 0.7vw #fff,
+      0 0 1.05vw #bc13fe,
+      0 0 1.4vw #bc13fe,
+      0 0 1.75vw #bc13fe,
+      0 0 2.1vw #bc13fe,
+      0 0 2.45vw #bc13fe;
+    margin-bottom: 2vh;
+  }
+
+  .GaidelisP {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+    border-radius: 20%;
+  }
 }
-
 
 @keyframes flicker {
 
