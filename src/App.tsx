@@ -1,31 +1,31 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
-// import Sus from "./Assets/sus.jpg"
+import aiste_iv from "./Assets/Aistė Ivanauskaitė.jpg"
+import akvile_ro from "./Assets/Akvilė Ropytė.jpg"
+import barbora_si from "./Assets/Barbora Šinkevičiūtė.jpg"
+import danielius_ve from "./Assets/Danielius Venskūnas.jpg"
+import egle_or from "./Assets/Eglė Orintaitė.jpg"
+import eidvile_sa from "./Assets/Eidvilė Sateikaitė.jpg"
+import gabija_ap from "./Assets/Gabija Apūkaitė.jpg"
+import gabija_bu from "./Assets/Gabija Burokaitė.png"
+import gabija_li from "./Assets/Gabija Liorentaitė.jpg"
+import gabriele_dr from "./Assets/Gabrielė Drungilaitė.jpg"
+import gabriele_ka from "./Assets/Gabrielė Kasperaitė.png"
+import gustas_st from "./Assets/Gustas Štaševskis.jpg"
+import gytis_bu from "./Assets/Gytis Buknius.jpg"
+import ieva_ma from "./Assets/Ieva Marija Noreikaitė.jpg"
+import lukas_ja from "./Assets/Lukas Jakonis.jpg"
+import meta_ze from "./Assets/Mėta Žemaitytė.jpg"
+import monika_mi from "./Assets/Monika Mirbakaitė.jpg"
+import ovidijus_st from "./Assets/Ovidijus Stankaitis.jpg"
+import rokas_ba from "./Assets/Rokas Baltrusaitis.jpg"
+import ugne_ba from "./Assets/Ugnė Baublytė.png"
+import ugne_me from "./Assets/Ugnė Meškuotytė.png"
+import vaiva_ja from "./Assets/Vaiva Janavičiūtė.jpg"
+import vygintas_ba from "./Assets/Vygintas Bartusevičius.jpg"
+import vytenis_na from "./Assets/Vytenis Narmontas.jpg"
+import simonas_ur from "./Assets/Simonas Urbutis.jpg"
 import Gaidelis from "./Assets/gaidelis.png";
 import { ExpandMore } from '@mui/icons-material';
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
@@ -90,7 +90,7 @@ const App: React.FC = () => {
           <div className="HS">{seconds < 10 ? "0" : ""}{seconds}</div>
         </div>
       </div>
-      <a href="https://docs.google.com/document/d/1mWPG952dNbKEvxkeSyQOlCK9GyKVpZTqkRsuP-Xr7IM/edit">NUORODA Į UŽDUOTIS</a>
+      <a href="https://docs.google.com/document/d/1NA-Uv2ZY6N8Ug73X2yRveOA1vYub-WDZnLMXQmVzxFk/edit?fbclid=IwAR1H18-OKxt5hcfFQy7n6T_VfeqZQYF7TnnuwxgRvhIKWP61ghkkbPNyY_k" target="_blank" rel="noopener noreferrer">NUORODA Į UŽDUOTIS</a>
       <Accordion sx={{
         width: "90vw",
         zIndex: "2",
@@ -114,28 +114,28 @@ const App: React.FC = () => {
         <AccordionDetails>
           <div className="Grid-container">
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={ovidijus_st} alt="" className="Picture" />
               <div className="Org">
                 <div>IT</div>
                 <div>OVIDIJUS STANKAITIS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={gytis_bu} alt="" className="Picture" />
               <div className="Org">
                 <div>ORGANIZAVIMAS</div>
                 <div>GYTIS BUKNIUS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={monika_mi} alt="" className="Picture" />
               <div className="Org">
                 <div>KOMUNIKACIJA</div>
                 <div>MONIKA MIRBAKAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={danielius_ve} alt="" className="Picture" />
               <div className="Org">
                 <div>MARKETINGAS</div>
                 <div>DANIELIUS VENSKŪNAS</div>
@@ -167,133 +167,127 @@ const App: React.FC = () => {
         <AccordionDetails>
           <div className="Grid-container">
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={vytenis_na} alt="" className="Picture" />
               <div className="Org">
                 <div>VYTENIS NARMONTAS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={gabriele_dr} alt="" className="Picture" />
               <div className="Org">
                 <div>GABRIELĖ DRUNGILAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={egle_or} alt="" className="Picture" />
               <div className="Org">
                 <div>EGLĖ ORINTAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={vaiva_ja} alt="" className="Picture" />
               <div className="Org">
                 <div>VAIVA JANAVIČIŪTĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={barbora_si} alt="" className="Picture" />
               <div className="Org">
                 <div>BARBORA ŠINKEVIČIŪTĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={rokas_ba} alt="" className="Picture" />
               <div className="Org">
                 <div>ROKAS BALTRUŠAITIS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={ugne_ba} alt="" className="Picture" />
               <div className="Org">
                 <div>UGNĖ BAUBLYTĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={ugne_me} alt="" className="Picture" />
               <div className="Org">
                 <div>UGNĖ MEŠKUOTYTĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={simonas_ur} alt="" className="Picture" />
               <div className="Org">
                 <div>SIMONAS URBUTIS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={aiste_iv} alt="" className="Picture" />
               <div className="Org">
                 <div>AISTĖ IVANAUSKAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={akvile_ro} alt="" className="Picture" />
               <div className="Org">
                 <div>AKVILĖ ROPYTĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={meta_ze} alt="" className="Picture" />
               <div className="Org">
                 <div>MĖTA ŽEMAITYTĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={eidvile_sa} alt="" className="Picture" />
               <div className="Org">
                 <div>EIDVILĖ SATEIKAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={lukas_ja} alt="" className="Picture" />
               <div className="Org">
                 <div>LUKAS JAKONIS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={gabriele_ka} alt="" className="Picture" />
               <div className="Org">
                 <div>GABRIELĖ KASPERAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
-              <div className="Org">
-                <div>GUSTAS LUGAUSKAS</div>
-              </div>
-            </div>
-            <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={vygintas_ba} alt="" className="Picture" />
               <div className="Org">
                 <div>VYGINTAS BARTUSEVIČIUS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={gabija_li} alt="" className="Picture" />
               <div className="Org">
                 <div>GABIJA LIORENTAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={gustas_st} alt="" className="Picture" />
               <div className="Org">
                 <div>GUSTAS ŠTAŠEVSKIS</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={ieva_ma} alt="" className="Picture" />
               <div className="Org">
                 <div>IEVA MARIJA NOREIKAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={gabija_bu} alt="" className="Picture" />
               <div className="Org">
                 <div>GABIJA BUROKAITĖ</div>
               </div>
             </div>
             <div className="grid-item">
-              <img src={Sus} alt="" className="Picture" />
+              <img src={gabija_ap} alt="" className="Picture" />
               <div className="Org">
                 <div>GABIJA APŪKAITĖ</div>
               </div>
