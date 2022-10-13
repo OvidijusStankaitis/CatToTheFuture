@@ -1,30 +1,30 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import aiste_iv from "./Assets/Aistė Ivanauskaitė.jpg"
-import akvile_ro from "./Assets/Akvilė Ropytė.jpg"
-import barbora_si from "./Assets/Barbora Šinkevičiūtė.jpg"
-import danielius_ve from "./Assets/Danielius Venskūnas.jpg"
-import egle_or from "./Assets/Eglė Orintaitė.jpg"
-import eidvile_sa from "./Assets/Eidvilė Sateikaitė.jpg"
-import gabija_ap from "./Assets/Gabija Apūkaitė.jpg"
-import gabija_bu from "./Assets/Gabija Burokaitė.png"
-import gabija_li from "./Assets/Gabija Liorentaitė.jpg"
-import gabriele_dr from "./Assets/Gabrielė Drungilaitė.jpg"
-import gabriele_ka from "./Assets/Gabrielė Kasperaitė.png"
-import gustas_st from "./Assets/Gustas Štaševskis.jpg"
-import gytis_bu from "./Assets/Gytis Buknius.jpg"
-import ieva_ma from "./Assets/Ieva Marija Noreikaitė.jpg"
-import lukas_ja from "./Assets/Lukas Jakonis.jpg"
-import meta_ze from "./Assets/Mėta Žemaitytė.jpg"
-import monika_mi from "./Assets/Monika Mirbakaitė.jpg"
-import ovidijus_st from "./Assets/Ovidijus Stankaitis.jpg"
-import rokas_ba from "./Assets/Rokas Baltrusaitis.jpg"
-import ugne_ba from "./Assets/Ugnė Baublytė.png"
-import ugne_me from "./Assets/Ugnė Meškuotytė.png"
-import vaiva_ja from "./Assets/Vaiva Janavičiūtė.jpg"
-import vygintas_ba from "./Assets/Vygintas Bartusevičius.jpg"
-import vytenis_na from "./Assets/Vytenis Narmontas.jpg"
-import simonas_ur from "./Assets/Simonas Urbutis.jpg"
+import aiste_iv from "./Assets/AisteI.webp"
+import akvile_ro from "./Assets/AkvileR.webp"
+import barbora_si from "./Assets/BarboraS.webp"
+import danielius_ve from "./Assets/DanieliusV.webp"
+import egle_or from "./Assets/EgleO.webp"
+import eidvile_sa from "./Assets/EidvileS.webp"
+import gabija_ap from "./Assets/GabijaA.webp"
+import gabija_bu from "./Assets/GabijaB.webp"
+import gabija_li from "./Assets/GabijaL.webp"
+import gabriele_dr from "./Assets/GabrieleD.webp"
+import gabriele_ka from "./Assets/GabrieleK.webp"
+import gustas_st from "./Assets/GustasS.webp"
+import gytis_bu from "./Assets/GytisB.webp"
+import ieva_ma from "./Assets/IevaMarijaN.webp"
+import lukas_ja from "./Assets/LukasJ.webp"
+import meta_ze from "./Assets/MetaZ.webp"
+import monika_mi from "./Assets/MonikaM.webp"
+import ovidijus_st from "./Assets/OvidijusS.webp"
+import rokas_ba from "./Assets/RokasB.webp"
+import ugne_ba from "./Assets/UgneB.webp"
+import ugne_me from "./Assets/UgneM.webp"
+import vaiva_ja from "./Assets/VaivaJ.webp"
+import vygintas_ba from "./Assets/VygintasB.webp"
+import vytenis_na from "./Assets/VytenisN.webp"
+import simonas_ur from "./Assets/SimonasU.webp"
 import Gaidelis from "./Assets/gaidelis.png";
 import { ExpandMore } from '@mui/icons-material';
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
@@ -59,7 +59,7 @@ const App: React.FC = () => {
     const s = Math.floor((difference % (1000 * 60)) / 1000)
     setSeconds(s)
   }
-  const target = new Date("10/13/2022 23:59:59")
+  const target = new Date("10/14/2022 02:59:59")
 
   useEffect(() => {
     let difference = target.getTime() - Date.now();
