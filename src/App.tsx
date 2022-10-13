@@ -319,11 +319,11 @@ const App: React.FC = () => {
             <div className="Text">
               „Dar viena nuobodi diena…“, galvojo Micius vartydamasis lovoje.
               Micius jau išnaršė kiekvieną planetos Smėlynas kampelį ir susipažino su kiekvienu gyventoju.
-              Jis troško nuotykių, tačiau ši maža ir nieko pasižyminti planeta negalėjo įgyvendinti katinuko didelių svajonių.
+              Jis troško nuotykių, tačiau ši maža ir niekuo nepasižyminti planeta negalėjo įgyvendinti katinuko didelių svajonių.
               Todėl Micius nusprendė pastatyti laiko mašiną ir iškeliauti į kitą laiką MIF planetoje!
               Jis troško išbandymų ir pavojų, kurių niekada nerastų Smėlyne. O ateityje yra daug Miciui nematytų technologijų,
               keistų madų ir paslaptingų misijų, kurias suprasti Miciui reikia pagalbos. Dėl to jis sumąstė suburti daugelį unikalių komandų,
-              kurios galės pateikti kuo įvairesnius ir kūrybiškesnius  sprendimus į ateities iššūkius!
+              kurios galės pateikti kuo įvairesnius ir kūrybiškesnius sprendimus į ateities iššūkius!
             </div>
             <br></br>
             <div className="Text">
