@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-import Sus from "./Assets/sus.jpg"
 import aiste_iv from "./Assets/Aistė Ivanauskaitė.jpg"
 import akvile_ro from "./Assets/Akvilė Ropytė.jpg"
 import barbora_si from "./Assets/Barbora Šinkevičiūtė.jpg"
